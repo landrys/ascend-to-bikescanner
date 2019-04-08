@@ -1,0 +1,45 @@
+I got to rethink this. We need to have several endpoints. One for serialized entry, scan, and employees or users.
+
+
+
+_____________________
+counterpointSerialized
+_____________________
+
+rename item_no to lc_item_no
+add product_id
+remove customer_no
+
+___________________________
+counterpointSerializedAction
+___________________________
+
+rename item_no to product_id 
+remove customer_no
+rename location to scan_location_id
+removed
+  `stat` varchar(50) DEFAULT NULL,
+  `prev_stat` varchar(50) DEFAULT NULL,
+  `man_entd` varchar(10) DEFAULT NULL,
+renamed
+  `last_maint_dt` datetime DEFAULT NULL,
+  `last_maint_usr_id` varchar(50) DEFAULT NULL,
+to
+  `action_time` datetime DEFAULT NULL,
+  `user_id` varchar(50) DEFAULT NULL,
+
+
+
+alter table employee add ascend_id varchar(36) default null after lc_id;
+
+
+
+How am I updating users table now?
+Syncing Employees in duraAce eleven creates/updates users table
+
+How do it with ascend? ( Via an action ... ? )
+
+
+
+
+
