@@ -1,5 +1,5 @@
-source /Users/fabio/Downloads/ascend/ascendSerialized.sql
-source /Users/fabio/Downloads/ascend/ascendToBikescanner.sql
-source /Users/fabio/Downloads/ascend/ilselevenac.sql
-source /Users/fabio/Downloads/ascend/latestscanelevenac.sql
-source /Users/fabio/Downloads/ascend/product.sql
+source ~/ascendToBikescanner/mysql/ascendSerialized.sql
+source ~/ascendToBikescanner/mysql/ascendToBikescanner.sql
+source ~/ascendToBikescanner/mysql/ilselevenac.sql
+source ~/ascendToBikescanner/mysql/latestscanelevenac.sql
+source ~/ascendToBikescanner/mysql/product.sql

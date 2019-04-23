@@ -33,7 +33,7 @@ CREATE TABLE `ascend_to_bikescanner` (
   `customer` varchar(100) DEFAULT NULL,
   `location_id` int(11) DEFAULT NULL,
   `destination_location_id` int(11) DEFAULT NULL,
-  `user_email` varchar(50) NOT NULL,
+  `user_email` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   `sku` varchar(50) DEFAULT NULL,
   `employee_name` varchar(50) DEFAULT NULL,
