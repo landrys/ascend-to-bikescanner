@@ -1,0 +1,5 @@
+curl -X POST -u ascend:bikescanner --header 'Content-Type: application/json' --header 'Accept: application/json' -d '[{"action": "Received", "userEmail": "<username>",  "password": "<password>","serial": "123abc"}]' 'http://localhost:8010/api/ascend/to-bikescanner-action'
+
+Below to test adding a product from a received action where serial already exists.
+__________________________________________________________________________________
+curl -X POST -u ascend:bikescanner --header 'Content-Type: application/json' --header 'Accept: application/json' -d '[{"action": "Received", "userEmail": "<user>",  "password": "<password>","serial": "WSBC711045655P", "productId": "ThisIsABigLongProductIDName"}]' 'http://localhost:8010/api/ascend/to-bikescanner-action'

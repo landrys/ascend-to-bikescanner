@@ -1,0 +1,2 @@
+ curl -X POST -u ascend:bikescanner --header 'Content-Type: application/json' --header 'Accept: application/json' -d '[{"action": "transferin", "userEmail": "ascend",  "password": "bikescanner","productId": "ThisIsAnother", "serial": "WSBC618082501N", "locationId": 3,
+"color": "Blue", "size":"56 cm", "categoryId": 5}]' 'http://localhost:8010/api/ascend/to-bikescanner-action'
