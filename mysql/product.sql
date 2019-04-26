@@ -33,8 +33,6 @@ CREATE TABLE `product` (
   `category` bigint(20) DEFAULT NULL,
   `model_tree` bigint(20) DEFAULT NULL,
   `last_modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  KEY `model_tree` (`model_tree`),
-  CONSTRAINT `product_ibfk_2` FOREIGN KEY (`model_tree`) REFERENCES `model_tree` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
